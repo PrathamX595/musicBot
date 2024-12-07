@@ -126,7 +126,7 @@ async def play(ctx, url):
             voice.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
             await ctx.send('Bot is playing')
         except Exception as e:
-            await ctx.send(f"An error occurred: {str(e)}")
+            await ctx.send("some error occured")
     else:
         await ctx.send("Bot is already playing")
         
